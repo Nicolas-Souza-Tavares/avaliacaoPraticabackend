@@ -338,51 +338,51 @@ public class TECLADO extends javax.swing.JFrame {
                  });
                  timer.setRepeats(false);
                  timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
+        }else if(e.getKeyCode() == KeyEvent.VK_3){
+                 System.out.println("Você apertou 3!");
+                 btn3.setBackground(new java.awt.Color(255, 0, 0));
                  String txt = txtArea.getText();
-                 txt += "m";
+                 txt += "3";
                  txtArea.setText(txt);  
                  Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
+                     btn3.setBackground(corOriginal);
                  });
                  timer.setRepeats(false);
                  timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
+        }else if(e.getKeyCode() == KeyEvent.VK_4){
+                 System.out.println("Você apertou 4!");
+                 btn4.setBackground(new java.awt.Color(255, 0, 0));
                  String txt = txtArea.getText();
-                 txt += "m";
+                 txt += "4";
                  txtArea.setText(txt);  
                  Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
+                     btn4.setBackground(corOriginal);
                  });
                  timer.setRepeats(false);
                  timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
+        }else if(e.getKeyCode() == KeyEvent.VK_5){
+                 System.out.println("Você apertou 5!");
+                 btn5.setBackground(new java.awt.Color(255, 0, 0));
                  String txt = txtArea.getText();
-                 txt += "m";
+                 txt += "5";
                  txtArea.setText(txt);  
                  Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
+                     btn5.setBackground(corOriginal);
                  });
                  timer.setRepeats(false);
                  timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
+        }else if(e.getKeyCode() == KeyEvent.VK_6){
+                 System.out.println("Você apertou 6!");
+                 btn6.setBackground(new java.awt.Color(255, 0, 0));
                  String txt = txtArea.getText();
-                 txt += "m";
+                 txt += "6";
                  txtArea.setText(txt);  
                  Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
+                     btn6.setBackground(corOriginal);
                  });
                  timer.setRepeats(false);
                  timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
+        }else if(e.getKeyCode() == KeyEvent.VK_M){
                  System.out.println("Você apertou M!");
                  btnM.setBackground(new java.awt.Color(255, 0, 0));
                  String txt = txtArea.getText();
