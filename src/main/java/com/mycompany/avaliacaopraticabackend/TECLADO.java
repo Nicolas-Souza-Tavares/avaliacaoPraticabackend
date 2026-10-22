@@ -286,7 +286,7 @@ java
                timer.setRepeats(false);
                timer.start();
 
-            }else if(e.getKeyCode() == KeyEvent.VK_C){
+            }else if(e.getKeyCode() == KeyEvent.VK_"C"){
                System.out.println("Você apertou C!");
                btnC.setBackground(new java.awt.Color(255, 0, 0));
                String txt = txtArea.getText();
@@ -298,7 +298,7 @@ java
                timer.setRepeats(false);
                timer.start();
 
-            }else if(e.getKeyCode() == KeyEvent.VK_V){
+            }else if(e.getKeyCode() == KeyEvent.VK_"v"){
                System.out.println("Você apertou V!");
                btnV.setBackground(new java.awt.Color(255, 0, 0));
                String txt = txtArea.getText();
