@@ -30,446 +30,441 @@ public class TECLADO extends javax.swing.JFrame {
                 
             Color corOriginal = btnQ.getBackground();
             
+           Aqui está o código na ordem das teclas do teclado QWERTY, da primeira fileira (`Q` até `P`), passando pela segunda (`A` até `L`) e pela terceira (`Z` até `M`), mantendo o recuo de 3 vezes o inicial.
+
+java
+```
             if(e.getKeyCode() == KeyEvent.VK_Q){
-                 System.out.println("Você apertou Q!");
-                 btnQ.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "q";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnQ.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
+               System.out.println("Você apertou Q!");
+               btnQ.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "q";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnQ.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
             }else if(e.getKeyCode() == KeyEvent.VK_W){
-                 System.out.println("Você apertou W!");
-                 btnW.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "w";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnW.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_E){
-                 System.out.println("Você apertou E!");
-                 btnE.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "e";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnE.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if (e.getKeyCode() == KeyEvent.VK_R){
-                 System.out.println("Você apertou R!");
-                 btnR.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "r";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnR.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_T){
-                 System.out.println("Você apertou T!");
-                 btnT.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "t";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnT.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if (e.getKeyCode() == KeyEvent.VK_Y){
-                 System.out.println("Você apertou Y!");
-                 btnY.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "Ÿ";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnR.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_U){
-                 System.out.println("Você apertou U!");
-                 btnU.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "u";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnR.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_I){
-                 System.out.println("Você apertou I!");
-                 btnR.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "i";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnI.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_O){
-                 System.out.println("Você apertou O!");
-                 btnR.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "o";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnO.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start(); 
-        }else if(e.getKeyCode() == KeyEvent.VK_P){
-                 System.out.println("Você apertou P!");
-                 btnP.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "p";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnP.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_A){
-                 System.out.println("Você apertou A!");
-                 btnR.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "a";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnA.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_S){
-                 System.out.println("Você apertou S!");
-                 btnS.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "s";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnS.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_D){
-                 System.out.println("Você apertou D!");
-                 btnR.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "d";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnD.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_F){
-                 System.out.println("Você apertou F!");
-                 btnF.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "F";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnF.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_G){
-                 System.out.println("Você apertou G!");
-                 btnG.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "g";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnG.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_H){
-                 System.out.println("Você apertou H!");
-                 btnH.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "H";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnH.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_J){
-                 System.out.println("Você apertou J!");
-                 btnJ.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "j";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnJ.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_K){
-                 System.out.println("Você apertou K!");
-                 btnK.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "k";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnK.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_L){
-                 System.out.println("Você apertou L!");
-                 btnL.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "L";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnL.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_Z){
-                 System.out.println("Você apertou Z!");
-                 btnZ.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "z";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnZ.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_X){
-                 System.out.println("Você apertou X!");
-                 btnX.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "x";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnX.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_C){
-                 System.out.println("Você apertou G!");
-                 btnC.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "c";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnC.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_V){
-                 System.out.println("Você apertou V!");
-                 btnV.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "v";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnV.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_B){
-                 System.out.println("Você apertou B!");
-                 btnB.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "b";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnB.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_N){
-                 System.out.println("Você apertou N!");
-                 btnN.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "n";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnN.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "m";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_1){
-                 System.out.println("Você apertou 1!");
-                 btn1.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "1";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btn1.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_2){
-                 System.out.println("Você apertou 2!");
-                 btn2.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "2";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btn2.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_3){
-                 System.out.println("Você apertou 3!");
-                 btn3.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "3";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btn3.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_4){
-                 System.out.println("Você apertou 4!");
-                 btn4.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "4";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btn4.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_5){
-                 System.out.println("Você apertou 5!");
-                 btn5.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "5";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btn5.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_6){
-                 System.out.println("Você apertou 6!");
-                 btn6.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "6";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btn6.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-        }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "m";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "m";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "m";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "m";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "m";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "m";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "m";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
-                 }else if(e.getKeyCode() == KeyEvent.VK_M){
-                 System.out.println("Você apertou M!");
-                 btnM.setBackground(new java.awt.Color(255, 0, 0));
-                 String txt = txtArea.getText();
-                 txt += "m";
-                 txtArea.setText(txt);  
-                 Timer timer = new Timer(1000, (ActionEvent evt) ->{
-                     btnM.setBackground(corOriginal);
-                 });
-                 timer.setRepeats(false);
-                 timer.start();
+               System.out.println("Você apertou W!");
+               btnW.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "w";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnW.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_E){
+               System.out.println("Você apertou E!");
+               btnE.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "e";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnE.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_R){
+               System.out.println("Você apertou R!");
+               btnR.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "r";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnR.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_T){
+               System.out.println("Você apertou T!");
+               btnT.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "t";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnT.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_Y){
+               System.out.println("Você apertou Y!");
+               btnY.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "y";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnY.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_U){
+               System.out.println("Você apertou U!");
+               btnU.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "u";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnU.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_I){
+               System.out.println("Você apertou I!");
+               btnI.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "i";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnI.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_O){
+               System.out.println("Você apertou O!");
+               btnO.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "o";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnO.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_P){
+               System.out.println("Você apertou P!");
+               btnP.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "p";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnP.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_A){
+               System.out.println("Você apertou A!");
+               btnA.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "a";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnA.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_S){
+               System.out.println("Você apertou S!");
+               btnS.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "s";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnS.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_D){
+               System.out.println("Você apertou D!");
+               btnD.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "d";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnD.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_F){
+               System.out.println("Você apertou F!");
+               btnF.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "f";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnF.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_G){
+               System.out.println("Você apertou G!");
+               btnG.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "g";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnG.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_H){
+               System.out.println("Você apertou H!");
+               btnH.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "h";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnH.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_J){
+               System.out.println("Você apertou J!");
+               btnJ.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "j";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnJ.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_K){
+               System.out.println("Você apertou K!");
+               btnK.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "k";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnK.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_L){
+               System.out.println("Você apertou L!");
+               btnL.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "l";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnL.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_Z){
+               System.out.println("Você apertou Z!");
+               btnZ.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "z";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnZ.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_X){
+               System.out.println("Você apertou X!");
+               btnX.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "x";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnX.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_C){
+               System.out.println("Você apertou C!");
+               btnC.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "c";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnC.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_V){
+               System.out.println("Você apertou V!");
+               btnV.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "v";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnV.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_B){
+               System.out.println("Você apertou B!");
+               btnB.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "b";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnB.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_N){
+               System.out.println("Você apertou N!");
+               btnN.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "n";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnN.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_M){
+               System.out.println("Você apertou M!");
+               btnM.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "m";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btnM.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+                           }else if(e.getKeyCode() == KeyEvent.VK_1){
+               System.out.println("Você apertou 1!");
+               btn1.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "1";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btn1.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_2){
+               System.out.println("Você apertou 2!");
+               btn2.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "2";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btn2.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_3){
+               System.out.println("Você apertou 3!");
+               btn3.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "3";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btn3.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_4){
+               System.out.println("Você apertou 4!");
+               btn4.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "4";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btn4.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_5){
+               System.out.println("Você apertou 5!");
+               btn5.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "5";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btn5.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_6){
+               System.out.println("Você apertou 6!");
+               btn6.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "6";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btn6.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_7){
+               System.out.println("Você apertou 7!");
+               btn7.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "7";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btn7.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_8){
+               System.out.println("Você apertou 8!");
+               btn8.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "8";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btn8.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_9){
+               System.out.println("Você apertou 9!");
+               btn9.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "9";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btn9.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+
+            }else if(e.getKeyCode() == KeyEvent.VK_0){
+               System.out.println("Você apertou 0!");
+               btn0.setBackground(new java.awt.Color(255, 0, 0));
+               String txt = txtArea.getText();
+               txt += "0";
+               txtArea.setText(txt);
+               Timer timer = new Timer(1000, (ActionEvent evt) ->{
+                  btn0.setBackground(corOriginal);
+               });
+               timer.setRepeats(false);
+               timer.start();
+     
                 }
         }
          @Override
